@@ -5,8 +5,9 @@ services:
       - ./config/:/mosquitto/config/:ro
       - ./log/:/mosquitto/log/
       - data:/mosquitto/data/
+      - ./test/:/mosquitto/test/
     ports:
-      - 1883:1883
+      #- 1883:1883
       - 9001:9001
 
 volumes:
